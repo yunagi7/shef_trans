@@ -1,0 +1,7 @@
+#Properties file
+stop.at = 4
+random.seed = 2
+count.of.agents = 5
+w1 = 1.11
+w2 = 1.22
+w3 = 1.33

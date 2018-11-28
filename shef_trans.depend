@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1542201938 source:/home/yunagi/shef_trans/src/main.cpp
+	<boost/mpi.hpp>
+	"repast_hpc/RepastProcess.h"
+	"model.h"
+
