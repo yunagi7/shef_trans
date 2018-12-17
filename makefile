@@ -50,7 +50,7 @@ sheffield: clean_compiled_files
 	$(MPICXX) $(REPAST_HPC_DEFINES) $(BOOST_INCLUDE) $(REPAST_HPC_INCLUDE) -w -I./include -c ./src/main.cpp -o ./objects/main.o
 	$(MPICXX) $(REPAST_HPC_DEFINES) $(BOOST_INCLUDE) $(REPAST_HPC_INCLUDE) -w -I./include -c ./src/model.cpp -o ./objects/model.o
 	$(MPICXX) $(REPAST_HPC_DEFINES) $(BOOST_INCLUDE) $(REPAST_HPC_INCLUDE) -w -I./include -c ./src/agent.cpp -o ./objects/agent.o
-	$(MPICXX) $(BOOST_LIB_DIR) $(REPAST_HPC_LIB_DIR) -o ./bin/main.exe  ./objects/main.o ./objects/model.o ./objects/agent.o $(REPAST_HPC_LIB) $(BOOST_LIBS)
+	$(MPICXX) $(BOOST_LIB_DIR) $(REPAST_HPC_LIB_DIR) -o ./main.exe  ./objects/main.o ./objects/model.o ./objects/agent.o $(REPAST_HPC_LIB) $(BOOST_LIBS)
 
 #.PHONY: run
 #run: $(MPIRUN) -n 4 ./bin/main.exe config.props model.props
